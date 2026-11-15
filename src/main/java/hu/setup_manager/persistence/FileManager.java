@@ -10,7 +10,15 @@ import java.util.ArrayList;
 
 public class FileManager {
 
-    private final String fileName = "setups.txt";
+    private final String fileName;
+
+    public FileManager() {
+        this.fileName = "setups.txt";
+    }
+
+    public FileManager(String fileName) {
+        this.fileName = fileName;
+    };
 
     public void saveSetups(SetupManager manager) throws IOException {
 
